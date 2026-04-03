@@ -1,5 +1,6 @@
 #include <csignal>
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 void signalHandler(int sig) {
@@ -12,11 +13,13 @@ void signalHandler(int sig) {
 int main() {
     signal(SIGINT, signalHandler);
 
-    while (true) {
+    for (int i = 0; i < 5; i++) {
         printf("Running...\n");
         fflush(stdout);
-        for (volatile int i = 0; i < 50000000; i++);
+        sleep(1);
     }
+
+    raise(SIGINT);
 
     return 0;
 }
