@@ -3,7 +3,8 @@ Examples from my presentation on signal handling in C++.
 
 ## How to compile and run
 
-g++ -o no_handler 1_no_handler.cpp./no_handler
+g++ -o no_handler 1_no_handler.cpp
+./no_handler
 
 g++ -o custom_handler 2_custom_handler.cpp
 ./custom_handler
