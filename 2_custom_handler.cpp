@@ -12,7 +12,7 @@ int main() {
     signal(SIGINT, signalHandler);
 
     while (true) {
-        cout << "Running..." << endl;
+        printf("Running...\n");
         for (volatile int i = 0; i < 50000000; i++);
     }
 
