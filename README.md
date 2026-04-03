@@ -4,10 +4,10 @@ Examples from my presentation on signal handling in C++.
 ## How to compile and run
 
 g++ -o no_handler 1_no_handler.cpp
-./no_handler
+./no_handler  (Will use CTRL + c)
 
 g++ -o custom_handler 2_custom_handler.cpp
-./custom_handler
+./custom_handler  (for loop with raise() used for demo)
 
 g++ -o raise_example 3_raise_example.cpp
 ./raise_example
